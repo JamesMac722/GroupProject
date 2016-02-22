@@ -14,7 +14,7 @@ namespace GroupWebsite
     
     public partial class BlogPost
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+      
         public BlogPost()
         {
             this.LinkingTableForMPBs = new HashSet<LinkingTableForMPB>();
@@ -27,7 +27,7 @@ namespace GroupWebsite
         public bool HasPicture { get; set; }
         public System.DateTime Date { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+       
         public virtual ICollection<LinkingTableForMPB> LinkingTableForMPBs { get; set; }
     }
 }
